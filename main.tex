@@ -1,7 +1,7 @@
 \documentclass{article}
 \usepackage{graphicx} % Required for inserting images
 
-\title{Imitation learning data collection using Apple Vision Pro}
+\title{Imitation Learning data collection using Apple Vision Pro}
 \author{Mmanu Chaturvedi}
 \date{January 2026}
 
@@ -10,7 +10,29 @@
 \maketitle
 
 \section{Introduction}
-Imitation learning has been shown to †
+Imitation learning is a process of learning a robot policy with demonstration.  There is a scarcity of data for imitation learning because freely available
+data on the internet is not useful for this.  This project aims to collect data using Apple Vision Pro (AVP) that can be used for training machine learning
+algorithm for imitation learning.  We write an AVP application that can be used to collect the camera images, head and hand pose.  This
+data is to be used for training algorithms for controlling robots.
+
+
+\section{Previous work}
+There are a few datasets availabel that capture data for imitation learning.  Datasets like Egodex[], [Add more here], that collect data for imitation learning. We collect data in a way that Egodex does, i.e., using a VR headset by Apple, AVP.
+
+
+\section{Apple Vision Pro description}
+AVP has a lot of sensors which have no official description or documentation.   The ones that do are the left and right main cameras, which can be captured from [TODO: cite]
+
+\section{Data format}
+\begin{enumerate}
+	\item JSON file:  Data is colleted in JSON format for head and hand pose.
+	\item JPEG file: Images are captured from the left and right cameras of AVP.
+\end{enumerate}
+
+
+
+
+% https://developer.apple.com/documentation/visionOS/accessing-the-main-camera
 
 
 \end{document}
